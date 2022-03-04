@@ -9,6 +9,8 @@ my $ini = 50;
 START:
 print "Combien misez-vous ? ";
 my $nb = <>;
+	if ($nb > $ini) {print "votre mise est trop élevée!\n";
+			goto START;}
 
 print "Quel est votre choix pile ou face ? ";
 my $nom = <>;
